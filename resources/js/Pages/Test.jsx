@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { DatePicker } from 'antd';
+import Layouts from "../Components/layoutComponents/layouts"
 
 
 const Test = () => {
     return (
-        <>
-        <DatePicker />        <h1>This is test component rtyrtyu</h1>
-        </>
+        <Layouts>
+            <h1>This is test component rtyrtyu</h1>
+        </Layouts>
 
     )
 }
