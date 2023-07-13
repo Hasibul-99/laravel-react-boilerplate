@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
+import { DatePicker } from 'antd';
+
 
 const Test = () => {
     return (
-        <h1>This is test component rtyrtyu</h1>
+        <>
+        <DatePicker />        <h1>This is test component rtyrtyu</h1>
+        </>
+
     )
 }
 
