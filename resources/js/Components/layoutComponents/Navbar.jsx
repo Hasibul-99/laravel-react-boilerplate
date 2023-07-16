@@ -1,14 +1,16 @@
 import React from 'react'
 import { Menu } from 'antd';
+import { HomeOutlined, ShopOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 
 export default function Navbar() {
     return (
-        <Menu className='height-inherit' mode="inline">
-            <Menu.Item>item 1 3</Menu.Item>
-            <Menu.Item>item 2</Menu.Item>
-            <Menu.SubMenu title="sub menu">
-                <Menu.Item>item 3</Menu.Item>
+        <Menu className='height-inherit pt-4' mode="inline">
+            <Menu.Item> <HomeOutlined className='mr-2' />Dashboard</Menu.Item>
+            <Menu.SubMenu icon={<ShopOutlined />} title={'property'}>
+                <Menu.Item>Product List</Menu.Item>
+                <Menu.Item>Product Add</Menu.Item>
             </Menu.SubMenu>
+            <Menu.Item> <ShoppingCartOutlined className='mr-2' />Orders</Menu.Item>
         </Menu>
     )
 }

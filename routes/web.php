@@ -14,6 +14,10 @@ use Inertia\Inertia; // We are going to use this class to render React component
 |
 */
 
+Route::get('/login', function () {
+    return Inertia::render('Login');
+});
+
 Route::get('/', function () {
     return Inertia::render('Test');
 });
