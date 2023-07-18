@@ -21,7 +21,7 @@ export default function Navbar() {
                 }
             >
                 <Menu.Item key="6"><Link href="/">Users</Link></Menu.Item>
-                <Menu.Item key="7"><Link href="/">Roles</Link></Menu.Item>
+                <Menu.Item key="7"><Link href="/roles">Roles</Link></Menu.Item>
                 <Menu.Item key="8"><Link href="/permissions">Permissions</Link></Menu.Item>
             </Menu.SubMenu>
 

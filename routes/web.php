@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\permissionsController;
+use App\Http\Controllers\RolesController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -38,6 +39,8 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth')->group(function() {
     Route::get('/permissions', [permissionsController::class, 'view'])->name('permissions');
+    // Roles
+    Route::get('/roles', [RolesController::class, 'view'])->name('roles');
 });
 
 require __DIR__.'/auth.php';
