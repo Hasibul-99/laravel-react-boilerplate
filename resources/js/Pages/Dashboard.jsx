@@ -1,5 +1,7 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
+import { DatePicker } from 'antd';
+
 
 export default function Dashboard({ auth }) {
     console.log("auth", auth);
