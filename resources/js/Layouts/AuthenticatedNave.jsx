@@ -8,7 +8,7 @@ export default function Navbar() {
         <Menu className='height-inherit pt-4' mode="inline">
             <Menu.Item key="1">
                 <HomeOutlined />
-                <span>Dashboard</span>
+                <span><Link href="/dashboard">Dashboard</Link></span>
             </Menu.Item>
 
             <Menu.SubMenu
@@ -22,7 +22,7 @@ export default function Navbar() {
             >
                 <Menu.Item key="6"><Link href="/">Users</Link></Menu.Item>
                 <Menu.Item key="7"><Link href="/">Roles</Link></Menu.Item>
-                <Menu.Item key="8"><Link href="/">Permissions</Link></Menu.Item>
+                <Menu.Item key="8"><Link href="/permissions">Permissions</Link></Menu.Item>
             </Menu.SubMenu>
 
             <Menu.Item> <ShoppingCartOutlined className='mr-2' />Orders</Menu.Item>
